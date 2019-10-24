@@ -1,0 +1,27 @@
+# File boot.toml
+
+[parity]
+chain = "/opt/parityPoA/parityGenesis.json"
+base_path = "/opt/parityPoA/boot"
+
+[network]
+port = 30303
+#bootnodes = []
+
+[rpc]
+interface = "all"
+cors = ["all"]
+hosts = ["all"]
+port = 8545
+apis = ["all"]
+
+[websockets]
+interface = "all"
+port = 8546
+origins = ["all"]
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+hosts = ["all"]
+
+[account]
+#unlock = ["0xE5B2B8c2ED6b4da7dB7C4619c417aC827517b383"]
+#password = ["/opt/parityPoA/pwd/password.pwd"]
